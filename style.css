@@ -183,3 +183,37 @@ ul {
     grid-template-columns: repeat(3, 1fr);
 
 }
+
+
+
+/*---------------------------task-list---------------------*/
+
+.task-list-body {
+    background-color: gray;
+}
+
+.task-list-container {
+    width: 750px;
+    min-height: 60rem;
+    background-color: #01bacc;
+    margin: 10rem auto;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.task-list-header {
+    display: flex;
+
+}
+
+.task-list-head-arrow-img {
+    margin: 0 3rem;
+    margin-top: 5rem;
+}
+
+.task-list-ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
