@@ -155,14 +155,31 @@ ul {
     color: #c2c2c2;
 }
 
+.add-task-date-time {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
 .add-task-date-input {
     height: 3.5rem;
     width: 40%;
     font-size: 1.5rem;
+    margin: 1rem;
 }
 
 .add-task-select-input {
-    height: 3.5rem;
+    height: 3.7rem;
     width: 40%;
     font-size: 1.5rem;
+    background-color: white;
+    margin: 1rem;
+}
+
+.add-task-tasks-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
 }

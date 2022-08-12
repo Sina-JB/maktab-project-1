@@ -15,19 +15,39 @@
                 <img src=".\assets\arrow-left.png" alt="">
                 <input class="add-task-first-input" type="text" placeholder="Add task">
             </header>
-            <span>
-                <input class="add-task-date-input" type="date" name="add-task-date" value="2022-Aug-11"></span>
-            <select class="add-task-select-input" name="add-task-time-select" id="add-task-time-select">
-                <option value="08:00">08:00 - 08:30</option>
-                <option value="08:30">08:30 - 09:00</option>
-                <option value="09:00">09:00 - 09:30</option>
-                <option value="09:30">09:30 - 10:00</option>
-                <option value="10:00">10:00 - 10:30</option>
-                <option value="10:30">10:30 - 11:00</option>
-                <option value="11:00">11:00 - 11:30</option>
-                <option value="11:30">11:30 - 12:00</option>
-            </select>
+            <span class="add-task-date-time">
+                <div>
+                    <input class="add-task-date-input" type="date" name="add-task-date" value="2022-Aug-11">
+                    <img src="assets/arrow-down.png" alt="">
+                </div>
+                <div>
+                    <select class="add-task-select-input" name="add-task-time-select" id="add-task-time-select">
+                        <option value="08:00">08:00 - 08:30</option>
 
+                    </select>
+                    <img src="assets/arrow-down.png" alt="">
+                </div>
+            </span>
+            <div class="add-task-tasks-div">
+                <div> <input type="radio" id="add-task-choose-type" name="add-task-tasks-button">
+                    <label for="work">Work</label>
+                </div>
+                <div> <input type="radio" id="add-task-choose-type" name="add-task-tasks-button">
+                    <label for="personal">Personal</label>
+                </div>
+                <div><input type="radio" id="add-task-choose-type" name="add-task-tasks-button">
+                    <label for="shopping">Shopping</label>
+                </div>
+                <div> <input type="radio" id="add-task-choose-type" name="add-task-tasks-button">
+                    <label for="health">Health</label>
+                </div>
+                <div> <input type="radio" id="add-task-choose-type" name="add-task-tasks-button">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <textarea name="add-task-2ndtxt-area" id="add-task-2ndtxt-area" cols="75" rows="20"></textarea>
+
+            <br><input type="submit" value="Submit" class="add-task-submit">
         </div>
         <script src=" main.js"></script>
     </body>
