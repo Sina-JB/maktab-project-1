@@ -10,46 +10,49 @@
     </head>
 
     <body class="add-task-body">
-        <div class="add-task-container">
-            <header>
-                <img src=".\assets\arrow-left.png" alt="">
-                <input class="add-task-first-input" type="text" placeholder="Add task">
-            </header>
-            <span class="add-task-date-time">
-                <div>
-                    <input class="add-task-date-input" type="date" name="add-task-date" value="2022-Aug-11">
-                    <img src="assets/arrow-down.png" alt="">
-                </div>
-                <div>
-                    <select class="add-task-select-input" name="add-task-time-select" id="add-task-time-select">
-                        <option value="08:00">08:00 - 08:30</option>
+        <form action="main.js" method="POST" class="form-sub" id="form-sub">
+            <div class="add-task-container">
+                <header class="add-task-header">
+                    <img src=".\assets\arrow-left.png" alt="">
+                    <input class="add-task-first-input submit" autocomplete="off" type="text" placeholder="Add task"
+                        name="add-task-task-name" id="add-task-task-name">
+                </header>
+                <span class="add-task-date-time">
+                    <div class="add-task-date">
+                        <p>Choose date</p>
+                        <input class="add-task-date-input submit" type="date" name="add-task-date" id="add-task-date">
+                        <img src="assets/arrow-down.png" alt="">
+                    </div>
+                    <div class="add-task-date">
+                        <p>Choose time</p>
+                        <select class="add-task-select-input" name="add-task-time-select" id="add-task-time-select">
+                            <option value="08:00">08:00 - 08:30</option>
 
-                    </select>
-                    <img src="assets/arrow-down.png" alt="">
-                </div>
-            </span>
-            <div class="add-task-tasks-div">
-                <div> <input type="radio" id="add-task-choose-type" name="add-task-tasks-button">
-                    <label for="work">Work</label>
-                </div>
-                <div> <input type="radio" id="add-task-choose-type" name="add-task-tasks-button">
-                    <label for="personal">Personal</label>
-                </div>
-                <div><input type="radio" id="add-task-choose-type" name="add-task-tasks-button">
-                    <label for="shopping">Shopping</label>
-                </div>
-                <div> <input type="radio" id="add-task-choose-type" name="add-task-tasks-button">
-                    <label for="health">Health</label>
-                </div>
-                <div> <input type="radio" id="add-task-choose-type" name="add-task-tasks-button">
-                    <label for="other">Other</label>
-                </div>
+                        </select>
+                        <img src="assets/arrow-down.png" alt="">
+                    </div>
+                </span>
+                <p>Choose task type</p>
+                <div class="add-task-tasks-div">
+                    <label for="work"><input type="radio" id="add-task-choose-type submit" value="work"
+                            name="radio">Work</label>
+                    <label for="personal"><input type="radio" id="add-task-choose-type submit" value="personal"
+                            name="radio">Personal</label>
+                    <label for="shopping"><input type="radio" id="add-task-choose-type submit" value="shopping"
+                            name="radio">Shopping</label>
+                    <label for="health"><input type="radio" id="add-task-choose-type submit" value="health"
+                            name="radio">Health</label>
+                    <label for="other"><input type="radio" id="add-task-choose-type submit" value="other"
+                            name="radio">Other</label>
+                </div> <textarea resize="none" name="add-task-2ndtxt-area submit" id="add-task-2ndtxt-area" cols="75"
+                    rows="20">
+                </textarea>
+
+                <br><button type="submit" value="Submit" class="add-task-btn submit" name="add-task-btn"
+                    id="add-task-btn">Add task</button>
             </div>
-            <textarea name="add-task-2ndtxt-area" id="add-task-2ndtxt-area" cols="75" rows="20"></textarea>
-
-            <br><input type="submit" value="Submit" class="add-task-submit">
-        </div>
-        <script src=" main.js"></script>
+        </form>
+        <script src="./scripts/main.js"></script>
     </body>
 
 </html>
