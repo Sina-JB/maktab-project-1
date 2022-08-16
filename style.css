@@ -93,6 +93,15 @@ ul {
     font-size: 1.4rem;
     width: 96%;
 }
+.home-first-li:first-child {
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom:solid 1px #f1f1f5 ;
+}
+.home-first-li:nth-child(2) {
+    box-shadow: none;
+    border-radius: 0;
+}
 
 .home-first-li-strong {
     font-size: 1.9rem;
@@ -158,7 +167,7 @@ ul {
 
 .add-task-container {
     width: 450px;
-    min-height: 105rem;
+    min-height: 75rem;
     background-color: white;
     margin: 5rem auto;
     font-family: sans-serif;
@@ -341,6 +350,9 @@ background-color: #ee2375;
     resize: none;
     border: none;
     color: black;
+    font-size: 18px;
+    width: 450px;
+    padding-bottom: 5px;
 }
 #add-task-btn {
     background-color: rgba(128, 128, 128, 0.62);
@@ -348,6 +360,7 @@ background-color: #ee2375;
     font-size: 18px;
     padding: 12px 24px;
     border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*---------------------------------------------------------------task-list--------------------------------------------*/

@@ -1,10 +1,11 @@
+/*--------------------------add-task-----------------------*/
 document.querySelector("form").addEventListener('submit', function (event) {
     event.preventDefault();
     const task = {};
     task.name = document.querySelector('input').value;
     document.querySelector("input").value = "";
     task.date = document.querySelector(".add-task-date-input").value
-    console.log(document.querySelector(".add-task-date-input").value);
+    // console.log(document.querySelector(".add-task-date-input").value);
     document.querySelector(".add-task-date-input").value = "";
     task.time = document.querySelector(".add-task-select-input").value;
     document.querySelector(".add-task-select-input").value = "";
@@ -26,6 +27,8 @@ document.querySelector("form").addEventListener('submit', function (event) {
 });
 // JSON.parse(localStorage.getItem)[5].date
 
+
+//choose time(slecet tag options) list
 for (let i = -1; i < 24; i++) {
     let timeCounteValue = (`${Math.ceil(i / 2) + 8}:${i % 2 ? "00" : "30"}`)
     // console.log(`${Math.ceil(i / 2) + 8}:${i % 2 ? "00" : "30"}`);
