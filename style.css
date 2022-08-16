@@ -157,13 +157,13 @@ ul {
 }
 
 .add-task-container {
-    width: 750px;
+    width: 450px;
     min-height: 105rem;
     background-color: white;
     margin: 5rem auto;
     font-family: sans-serif;
-    padding: 24px;
-    margin-left: 15%;
+    padding: 64px;
+    /* margin-left: 15%; */
 }
 
 .add-task-date {
@@ -291,9 +291,9 @@ select::-ms-expand {
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
-    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
-    font-size: 16px;
-    font-weight: 800;
+    font-family: sans-serif;
+    font-size: 18px;
+    /* font-weight: 800; */
     line-height: 16px;
     min-height: 40px;
     outline: 0;
@@ -313,14 +313,41 @@ select::-ms-expand {
 
 }
 
-.add-task-tasks-div label:nth-child(1) {
+.add-task-tasks-div label:nth-child(1)  {
+    background-color: #42aafd;
+}
+.add-task-tasks-div label:nth-child(2) {
     background-color: #01bacc;
+}
+.add-task-tasks-div label:nth-child(3) {
+    background-color: #cd42fd;
+}
+.add-task-tasks-div label:nth-child(4) {
+background-color: #ee2375;
+}
+.add-task-tasks-div label:nth-child(5) {
+    background-color: #8539f9;
+    margin-bottom: 5%;
 }
 
 .add-task-tasks-div label:hover {
     background: #DDD;
 }
-
+.add-tak-above-text-area {
+    font-size: 18px;
+}
+#add-task-2ndtxt-area {
+    resize: none;
+    border: none;
+    color: black;
+}
+#add-task-btn {
+    background-color: rgba(128, 128, 128, 0.62);
+    border-radius: 10%;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+}
 
 /*---------------------------------------------------------------task-list--------------------------------------------*/
 
